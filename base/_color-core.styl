@@ -1,0 +1,53 @@
+/* --------------------------
+Colors */
+
+// Generics
+$c-white = #ffffff
+$c-black  = #333333
+$c-gray   = lighten(lighten($black, 15), 35)
+$c-tan    = #DFDED9
+$c-green  = #91B382
+$c-orange = #BE8C1B
+$c-red    = #F0342B
+
+// Specifics
+$c-bg                       = #ffffff
+$c-el-border                = #BDBDBD
+$c-bg-secondary             = #F4F4F4
+
+// Asignments
+$c-body                     = lighten($black, 15)
+$body-color                 = $c-body
+// $body-background-color      = #f4f4f4
+$body-background-color      = $c-bg
+$link-color                 = lighten($body-color, 35)
+$link-text-decoration       = none
+$link-hover-text-decoration = underline
+$pre-background-color       = transparent
+$pre-border-radius          = $border-radius
+$rule-border-style          = solid
+$rule-border-width          = $border-width
+$rule-border-color          = $border-color
+
+
+body
+  color: $body-color
+  background-color: $body-background-color
+
+a
+  color: $link-color
+  text-decoration: $link-text-decoration
+  transition: .2s ease color
+
+a:hover
+  color: $body-color
+
+pre, code
+  background-color: $pre-background-color
+  border-radius: $pre-border-radius
+
+hr
+  border: 0
+  border-bottom-style: $rule-border-style
+  border-bottom-width: $rule-border-width
+  border-bottom-color: $rule-border-color
